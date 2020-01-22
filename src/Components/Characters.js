@@ -1,11 +1,9 @@
 import React, { useReducer, useEffect } from 'react';
-import axios from 'axios'
 import {Link} from 'react-router-dom'
+import axios from 'axios'
 
 
-function PageTwo() {
-   
-  
+function Characters() {
     const dataReducer = (state, action) => {
         if (action.type === "SET_ERROR") {
             return { ...state, list: [], error: true };
@@ -33,12 +31,9 @@ function PageTwo() {
             });
     }, []);
     return (
-        <div>
-            <div className="story">Fox never liked the name but his father 
-            <br/>thought it was a funny play-on word so he’s 
-            <br/>keeping it that way just for him.
-            </div>
-        </div>
+       <div>
+       
+        </div> 
     )
 }
-export default PageTwo
+export default Characters

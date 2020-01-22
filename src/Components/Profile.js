@@ -14,9 +14,9 @@ const Profile = () => {
     <Fragment>
       <img src={user.picture} alt="Profile" />
 
-      <h2>{user.name}</h2>
-      <p>{user.email}</p>
-      <code>{JSON.stringify(user, null, 2)}</code>
+      <h2 style={{textDecoration: "none", color: "white"}}>{user.name}</h2>
+      <p style={{textDecoration: "none", color: "white"}}>{user.email}</p>
+      <code style={{textDecoration: "none", color: "white"}}>{JSON.stringify(user, null, 2)}</code>
     </Fragment>
   );
 };

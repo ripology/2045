@@ -32,7 +32,7 @@ function PageOne() {
 
     return (
         <div>
-            <div className='storyPageOne'>
+            <div className='story'>
                 <div>You play as Fox Skelton,  a Private Detective
                      <br/>who has recently just been given his own firm 
                      <br/>from his father(Franklin B. Skelton)  who has now passed away. 
@@ -41,7 +41,7 @@ function PageOne() {
                      <br/>because the old one reminded you too much of your father, and it also 
                      <br/>shows that things are not the same anymore at “Skeleton Investigators”. </div>
             </div>
-            <Link to="/two"><button className="next">Next</button></Link>
+            <Link to="/two" className="next"><button >Next</button></Link>
         </div>
     )
 }

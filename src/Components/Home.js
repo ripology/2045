@@ -1,6 +1,8 @@
 import React, { useReducer, useEffect } from 'react';
 import {Link} from 'react-router-dom'
+import title from '../utils/title.png'
 import axios from 'axios'
+
 
 
 function Home() {
@@ -32,8 +34,10 @@ function Home() {
     }, []);
     return (
        <div>
-         <div className="Title">2045</div>
-         <Link to="/one"><button className="start">Start</button></Link>
+         <div className="Title">
+             <img src={title}></img>
+         </div>
+         <Link to="/one" className="start"><button>Start</button></Link>
          
         </div> 
     )
